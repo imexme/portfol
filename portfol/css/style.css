@@ -4,40 +4,194 @@
 	font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
- #body	{
-  height:3000px;
-  animation: all 0.5s ease;
-  margin:0;
-  padding:0;
-  justify-content: center;
-  display: flex;
+h3 {
+  font-size: calc(0.9em + 0.8vw) !important; 
+
+}
+
+h1 {
+    font-size: calc(1.2em + 0.8vw) !important; 
+
+}
+
+h2 {
+    font-size: calc(0.9em + 0.9vw) !important;
+
+}
+
+p { 
+/*   display: flex; */
+  font-size: calc(0.7em + 0.5vw) !important;  
+resize: both;  
+ margin-left:20vh; 
+ padding-bottom: 2vh;
+ padding-top: 5vh;
+  width: 60vh; 
+}
+
+@media only screen and (max-width: 650px) {
   
+  p {
+    scale: 0.9;
+  }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  #github, #result, #figma {
+    scale: 0.5;
+  }
+}
+
+
+
+
+
+
+@media only screen and (max-height:1440px) {
+ 
+#contactme {
+  position: absolute;
+  height: 160px;
+  width: 250px;
+  left: 40%;
+  top:93%;
+  background: rgb(159,193,199);
+  border-radius: 125px 125px 0 0;
+  transition: 2s;
+  }
+    
+    #contactme:hover {
+    position: absolute;
+    transition: 2s;
+    height: 160px;
+    width: 250px;
+    left: 40%;
+    top:90%;
+    background: rgb(192,193,199);
+    border-radius: 125px 125px 0 0;
+  }
+  
+}
+
+/*    
+@media only screen and (max-height:568px) {
+    
+  #contactme{
+  position: absolute;
+  height: 160px;
+  width: 250px;
+  left: 30%;
+  top:90%;
+  background: rgb(159,193,199);
+  border-radius: 125px 125px 0 0;
+  transition: 2s;
+  }
+    
+    #contactme:hover {
+    position: absolute;
+    transition: 2s;
+    height: 160px;
+    width: 250px;
+    left: 29%;
+    top:79%;
+    background: rgb(192,193,199);
+    border-radius: 125px 125px 0 0;
+   }
+   } */
+
+
+   @media only screen and (max-height:768px) {
+    
+    #contactme{
+    position: absolute;
+    height: 160px;
+    width: 250px;
+    left: 30%;
+    top:89%;
+    background: rgb(159,193,199);
+    border-radius: 125px 125px 0 0;
+    transition: 2s;
+    }
+      
+      #contactme:hover {
+      position: absolute;
+      transition: 2s;
+      height: 160px;
+      width: 250px;
+      left: 33%;
+      top:83%;
+      background: rgb(192,193,199);
+      border-radius: 125px 125px 0 0;
+     }
+     }
+  
+  
+
+     @media only screen and (max-height:900px) {
+    
+      #contactme{
+      position: absolute;
+      height: 160px;
+      width: 250px;
+      left: 35%;
+      top:90%;
+      background: rgb(159,193,199);
+      border-radius: 125px 125px 0 0;
+      transition: 2s;
+      }
+        
+        #contactme:hover {
+        position: absolute;
+        transition: 2s;
+        height: 160px;
+        width: 250px;
+        left: 35%;
+        top:86%;
+        background: rgb(192,193,199);
+        border-radius: 125px 125px 0 0;
+       }
+       }
+    
+  
+
+.carousel-inner
+{
+  height: 70vh;
+  justify-content: center !important;  
+  text-align: center !important;
+/*   padding-right:1vh;
+  padding-left:1vh;  */
+   /* position: relative;  */
+}
+
+
+
+ .carousel-indicators {
+   top: 110% !important;
+   justify-content: center !important;  
+}
+
+
+.col intro-col3{
+   justify-content: center !important;
+    text-align: center !important; 
+   resize: both;
+}
+ 
+
+ #body	{
+  animation: all 1s ease !important;
+  justify-content: center !important;
+  display: flex;  
 } 
 
-.col.intro-col {
-  justify-content: center !important;
-  text-align: center !important;
-}
-
-.intro-col h1, 
-.intro-col h2 {
-  margin: top;
-}
-
-.intro-col h2 {
-  font-size:1.1em;
-}
-
-.col h3 {
-  margin:0;
-}
 
 .page-section {
   position: fixed;
   display: flex;
-  width: 100%;
-  max-width:2400px;
-  min-width:450px;
+  width: 100vh; 
   height: 100vh;
   animation: all 1s ease;
   flex-direction: column-reverse;
@@ -45,9 +199,12 @@
 
 
   .col{
-    justify-content: center !important;
-    text-align: center !important;
+    
+    justify-content: center !important; 
+    text-align: center !important; 
+   font-size: calc(0.4em + 0.4vw) !important; 
   }
+
   .col a {
     color:inherit;
     text-decoration: none;
@@ -56,66 +213,8 @@
   .col a:hover {
     text-decoration: underline;
   } 
-  /* 
-.col {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: flex-end;
-  padding: 0 5% 0% 5%;
-  flex-grow: 1;
-  flex:1;
-}
 
-
-
-.page-section .col:first-child {
-  justify-content: flex-start;
-  padding: 5% 5% 0 5%;
-}
-
-.col * {
-	width:100%;
-  align-self: center;
-}
-
-.col a {
-  color:inherit;
-  text-decoration: none;
-}
-
-.col a:hover {
-  text-decoration: underline;
-} 
-
-@media only screen and (min-width: 500px) {
-  .page-section {
-    flex-direction: row;
-  }
-
-  .page-section .col:first-child {
-    justify-content: center;
-    text-align: left;
-  }
-
-  .col {
-    justify-content: center;
-    padding: 1% !important;
-    flex-direction: column;
-  }
-
-}
-*/
-/* 
-.profiler-img	{
-   border-radius:50%;
-	width:200px;
-}
-
-.project-img {
-	 width:300px;
-	max-width:100%;
-}  */
+  
 
 .hidden {
 	display: none;
@@ -126,33 +225,202 @@
 }
 
 .shown {
-	/*display: initial;*/
+ 	/*display: initial;*/ 
 	-webkit-animation: fadeIn 1s /* Safari 4+ */;
   -moz-animation:    fadeIn 1s /* Fx 5+ */;
   -o-animation:      fadeIn 1s /* Opera 12+ */;
   animation:         fadeIn 1s /* IE 10+, Fx 29+ */;
 }
 
-/* .svgicon {
-  width:80px;
-  margin:5px;
-  margin-top:5em;
-  display: inline-block;
-}  */
 
-#technologies {
-  flex-direction: column-reverse;
-  margin-top:15px;
-  font-size:3em;
-  max-width:100%;
-  margin:5px;
+#col8{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    display: table-cell;
+    vertical-align: middle;
+   font-size: calc(0.9em + 0.6vw) !important;
 
 }
 
-/* .technologies i {
-  max-width:100%;
-  margin:5px;
-} */
+
+
+
+#contact:hover {
+  -webkit-text-fill-color: rgb(237, 38, 255);
+}
+
+/* give me rec. project */
+.taco{
+  background: url(../img/taco.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 30vh;
+  height: 30vh;  
+  /* margin-left: 8vw; */
+  filter: grayscale(100%);
+  transition:all 2s ease;
+  margin-bottom: 5vh;
+
+}
+
+.taco:hover{
+  filter: grayscale(0%);
+}
+
+
+/* robo friends project */
+.robo{
+  background: url(../img/robo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 30vh;
+  height: 30vh;  
+  /* margin-left: 35vh; */
+  filter: grayscale(100%);
+  transition:all 2s ease;
+  margin-bottom: 5vh;
+}
+
+.robo:hover{
+  filter: grayscale(0%);
+}
+
+
+
+/* tofo project */
+
+.todo{
+  background: url(../img/todo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 30vh;
+  height: 30vh;  
+  /* margin-left: 2vh; */
+  filter: grayscale(100%);
+  transition:all 2s ease;
+  margin-bottom: 5vh;
+
+}
+
+.todo:hover{
+  filter: grayscale(0%);
+}
+
+
+
+/* stickmen project */
+
+#stick{
+  background: url(../img/stick.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 30vh;
+  height: 30vh;  
+  /* margin-left: 5vh; */
+  filter: opacity(100%);
+  transition: 2s ease-out; 
+  margin-bottom: 5vh;
+
+}
+
+#stick:hover{
+  filter: opacity(0%);
+
+}
+
+.europa{
+  background: url(../img/europa.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30vw;
+  height: 30vh;  
+  margin-left: 35vh;
+  filter: grayscale(80%);
+  transition: 2s ease-out;
+  margin-bottom: 5vh;
+}
+
+.europa:hover{
+  filter: grayscale(0%);
+
+}
+
+
+
+
+/* the plate on last page */
+ 
+ .technologies {
+  background: url(../img/pot.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  width: 50vh;
+  height: 50vh;  
+  justify-content: center; 
+  display: flex;  
+  margin-left: 25vh;
+/*   position: absolute;
+ */
+
+}; 
+
+/* icons on the plate  */
+
+ .object1 {
+  top:40%;
+  position: relative;
+  width: 7vh;
+  height: 7vh;
+
+} 
+
+
+ .object2 {
+  top:40%;
+  position: relative;
+  width: 7vh;
+  height: 7vh;
+
+} 
+
+.object3 {
+  position:relative;
+  top:52%;
+  bottom: -6vh;
+  right: -6vh;
+  width: 7vh;
+  height: 7vh;
+  
+
+}
+
+.object4 {  
+  top:52%;
+  position:relative;
+  bottom: -6vh;
+  left: -6vh;
+  width: 7vh;
+  height: 7vh;
+  
+}
+
+.object {
+  top:25%;
+  position: relative;;
+  bottom: 6vh;
+  width: 7vh;
+  height: 7vh;
+    }
+
+
+
 
 #arrow {
   width:40px;
@@ -163,6 +431,131 @@
   -o-animation:      upDown 2s infinite /* Opera 12+ */;
   animation:         upDown 2s infinite /* IE 10+, Fx 29+ */;
 }
+
+
+
+
+#figma{
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 10px; 
+  transition: transform .5s; 
+  margin-right: 1vh;
+
+ }
+
+#figma:hover{
+  transform: scale(1.2);
+ }
+
+
+
+
+ #github{
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 10px; 
+  transition: transform .5s; 
+  margin-right: 1vh;
+ }
+ 
+#github:hover{
+  transform: scale(1.2);
+}
+
+
+
+ #result{
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 10px; 
+  transition: transform .5s; 
+  margin-right: 1vh;
+ }
+ 
+#result:hover{
+  transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer  */
+
+/* footer layers 3 colors*/
+ #footer {
+  position:fixed;
+  left:0px;
+  bottom:0px; 
+  height:20px;
+  width:100%;
+  background-color:  rgb(132,163,169);
+margin-top: 2vh;
+
+     }
+
+    
+    
+
+
+
+
+
+     #footer3 {
+      margin-top: 2vh;
+      position:fixed;
+      left:0px;
+      bottom:30px; 
+      height:10px;
+      width:100%;
+      background-color:  rgb(192,193,199);
+      margin-top: 2vh;
+         }
+    
+         #footer2 {
+          position:fixed;
+          left:0px;
+          bottom:17px; 
+          height:15px;
+          width:100%;
+          background-color:  rgb(172,193,199);
+          margin-top: 2vh;
+
+             } 
+
+
+
+/*   text on circel   */
+
+
+  #textover{
+  position: relative;
+  left: 32%;
+  font-size:15px;
+  top:5%;
+ }
+
+
+ #contactmail{
+  position: relative;
+  left: 13%;
+  font-size:15px;
+  top:9%;
+ }
+ 
+
+
+
+
+
 
 @-webkit-keyframes upDown {
   0%   { top: 0; }
@@ -219,7 +612,3 @@
   0%   { opacity: 1; }
   100% { opacity: 0; }
 }
-
-
-
-
