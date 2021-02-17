@@ -19,20 +19,28 @@ h2 {
 
 }
 
-p { 
-/*   display: flex; */
-  font-size: calc(0.7em + 0.5vw) !important;  
-resize: both;  
- margin-left:20vh; 
- padding-bottom: 2vh;
- padding-top: 5vh;
-  width: 60vh; 
-}
+ /* p {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  width:90vw; 
 
-@media only screen and (max-width: 650px) {
+  */
+
+p { 
+  font-size: calc(0.6em + 0.6vw) !important;  
+ resize: both;  
+ margin-left:20vw; 
+ margin-right: 20vw;
+ padding-bottom: 2vh;
+ padding-top: 2vh;
+ width: 60vw; 
+} 
+/*   display: flex;
+
+/* @media only screen and (max-width: 650px) {
   
   p {
-    scale: 0.9;
+    scale: 2.9;
   }
 }
 
@@ -40,11 +48,10 @@ resize: both;
 
 @media only screen and (max-width: 600px) {
   #github, #result, #figma {
-    scale: 0.5;
+    scale: 5.5;
   }
 }
-
-
+ */
 
 
 
@@ -158,7 +165,7 @@ resize: both;
 
 .carousel-inner
 {
-  height: 70vh;
+  height: 60vh;
   justify-content: center !important;  
   text-align: center !important;
 /*   padding-right:1vh;
@@ -191,7 +198,7 @@ resize: both;
 .page-section {
   position: fixed;
   display: flex;
-  width: 100vh; 
+  width: 100vw; 
   height: 100vh;
   animation: all 1s ease;
   flex-direction: column-reverse;
@@ -202,7 +209,7 @@ resize: both;
     
     justify-content: center !important; 
     text-align: center !important; 
-   font-size: calc(0.4em + 0.4vw) !important; 
+   font-size: calc(0.7em + 0.6vw) !important; 
   }
 
   .col a {
@@ -437,15 +444,15 @@ resize: both;
 
 #figma{
   position: relative;
-  margin-top: 20px;
-  margin-bottom: 10px; 
+  margin-top: 2vh;
+  margin-bottom: 2vh; 
   transition: transform .5s; 
   margin-right: 1vh;
 
  }
 
 #figma:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
  }
 
 
@@ -453,35 +460,36 @@ resize: both;
 
  #github{
   position: relative;
-  margin-top: 20px;
-  margin-bottom: 10px; 
+  margin-top: 2vh;
+  margin-bottom: 2vh; 
   transition: transform .5s; 
   margin-right: 1vh;
  }
  
 #github:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 
 
  #result{
   position: relative;
-  margin-top: 20px;
-  margin-bottom: 10px; 
+  margin-top: 2vh;
+  margin-bottom: 2vh; 
   transition: transform .5s; 
   margin-right: 1vh;
  }
  
 #result:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 
 
 
-
-
+.icons{
+  margin-left: 1.9vw;
+}
 
 
 
