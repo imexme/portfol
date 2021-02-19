@@ -19,43 +19,23 @@ h2 {
 
 } 
 
- /* p {
-  margin-left: 1.5em;
-  margin-right: 1.5em;
-  width:90vw; 
-
-  */
 
 p { 
  font-size: calc(0.6em + 0.6vw) !important;
- margin-right: 15vh;
- margin-left: 15vh;
+ margin-block-end: 10vh;
+  padding-right: 15vh;
+ padding-left: 15vh;
  padding-bottom: 2vh;
  padding-top: 2vh;
+    overflow-wrap: break-word;
+
 } 
-/*   display: flex;
-
-/* @media only screen and (max-width: 650px) {
-  
-  p {
-    scale: 2.9;
-  }
-}
-
-
-
-@media only screen and (max-width: 600px) {
-  #github, #result, #figma {
-    scale: 5.5;
-  }
-}
- */
 
 
  .link {
   display: inline-block;
   overflow: hidden;
-  background: linear-gradient(to right, rgb(159, 255, 250), rgb(59, 151, 159) 50%, rgb(0, 0, 0) 1%);
+  background: linear-gradient(to right, rgb(159, 255, 250), rgb(59, 151, 159) 50%, rgb(0, 0, 0) 0%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -68,38 +48,8 @@ p {
   }
 
 
-
-
 /* ////////  contact form  ///////// */
-
-
-/* @media only screen and (max-height:900px) {
  
-#contactme {
-  position: absolute;
-  height: 160px;
-  width: 250px;
-  left: 35%;
-  top:91%;
-  background: rgb(159,193,199);
-  border-radius: 125px 125px 0 0;
-  transition: 2s;
-  }
-    
-    #contactme:hover {
-    position: absolute;
-    transition: 2s;
-    height: 160px;
-    width: 250px;
-    left: 39%;
-    top:88%;
-    background: rgb(192,193,199);
-    border-radius: 125px 125px 0 0;
-  }
-  
-} */
-
-   
     
   #contactme{
   position: absolute;
@@ -280,50 +230,44 @@ p {
                 border-radius: 125px 125px 0 0;
                }
                }
-  
-
-
-
-  
-
-
 
 /* ///////////////// */
 
+p {
+display: inline-block;
+max-width: 80%;
 
-
-
+}
 
 .carousel-inner
 {
   height: 60vh;
+  width: 10vh;
   justify-content: center !important;  
   text-align: center !important;
-  padding-right:4vh;
-  padding-left:4vh;  
+  border-radius: 4vh;
+  /* margin: auto;
+  padding: auto; */
+
+
 }
-
-
 
  .carousel-indicators {
    top: 110% !important;
    justify-content: center !important;  
 }
 
-
 .col intro-col3{
    justify-content: center !important;
     text-align: center !important; 
    resize: both;
 }
- 
 
  #body	{
   animation: all 1s ease !important;
   justify-content: center !important;
   display: flex;  
 } 
-
 
 .page-section {
   position: fixed;
