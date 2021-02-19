@@ -5,92 +5,58 @@
 }
 
 h3 {
-  font-size: calc(0.9em + 0.8vw) !important; 
+  font-size: calc(0.8em + 0.6vw) !important; 
 
 }
 
 h1 {
-    font-size: calc(1.2em + 0.8vw) !important; 
+    font-size: calc(1.1em + 0.7vw) !important; 
 
 }
 
 h2 {
     font-size: calc(0.9em + 0.9vw) !important;
 
-}
+} 
 
- /* p {
-  margin-left: 1.5em;
-  margin-right: 1.5em;
-  width:90vw; 
-
-  */
 
 p { 
-  font-size: calc(0.6em + 0.6vw) !important;  
- resize: both;  
- margin-left:20vw; 
- margin-right: 20vw;
+ font-size: calc(0.6em + 0.6vw) !important;
+ margin-block-end: 10vh;
+  padding-right: 15vh;
+ padding-left: 15vh;
  padding-bottom: 2vh;
  padding-top: 2vh;
- width: 60vw; 
+    overflow-wrap: break-word;
+
 } 
-/*   display: flex;
 
-/* @media only screen and (max-width: 650px) {
-  
-  p {
-    scale: 2.9;
+
+ .link {
+  display: inline-block;
+  overflow: hidden;
+  background: linear-gradient(to right, rgb(159, 255, 250), rgb(59, 151, 159) 50%, rgb(0, 0, 0) 0%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 0.9s ease;
+ }
+  .link:hover {
+    background-position: 0 100%;
   }
-}
 
 
-
-@media only screen and (max-width: 600px) {
-  #github, #result, #figma {
-    scale: 5.5;
-  }
-}
- */
-
-
-
-
-@media only screen and (max-height:1440px) {
+/* ////////  contact form  ///////// */
  
-#contactme {
-  position: absolute;
-  height: 160px;
-  width: 250px;
-  left: 40%;
-  top:93%;
-  background: rgb(159,193,199);
-  border-radius: 125px 125px 0 0;
-  transition: 2s;
-  }
-    
-    #contactme:hover {
-    position: absolute;
-    transition: 2s;
-    height: 160px;
-    width: 250px;
-    left: 40%;
-    top:90%;
-    background: rgb(192,193,199);
-    border-radius: 125px 125px 0 0;
-  }
-  
-}
-
-/*    
-@media only screen and (max-height:568px) {
     
   #contactme{
   position: absolute;
   height: 160px;
   width: 250px;
-  left: 30%;
-  top:90%;
+  left: 29%;
+  top:88%;
   background: rgb(159,193,199);
   border-radius: 125px 125px 0 0;
   transition: 2s;
@@ -102,21 +68,21 @@ p {
     height: 160px;
     width: 250px;
     left: 29%;
-    top:79%;
+    top:81%;
     background: rgb(192,193,199);
     border-radius: 125px 125px 0 0;
    }
-   } */
 
 
-   @media only screen and (max-height:768px) {
+
+   @media only screen and (max-height:1400px) {
     
     #contactme{
     position: absolute;
     height: 160px;
     width: 250px;
-    left: 30%;
-    top:89%;
+    left: 40%;
+    top:94%;
     background: rgb(159,193,199);
     border-radius: 125px 125px 0 0;
     transition: 2s;
@@ -127,23 +93,22 @@ p {
       transition: 2s;
       height: 160px;
       width: 250px;
-      left: 33%;
-      top:83%;
+      left: 40%;
+      top:91%;
       background: rgb(192,193,199);
       border-radius: 125px 125px 0 0;
      }
      }
-  
-  
 
-     @media only screen and (max-height:900px) {
+
+     @media only screen and (max-height:1050px) {
     
       #contactme{
       position: absolute;
       height: 160px;
       width: 250px;
-      left: 35%;
-      top:90%;
+      left: 38%;
+      top:92%;
       background: rgb(159,193,199);
       border-radius: 125px 125px 0 0;
       transition: 2s;
@@ -154,39 +119,149 @@ p {
         transition: 2s;
         height: 160px;
         width: 250px;
-        left: 35%;
-        top:86%;
+        left: 38%;
+        top:89%;
         background: rgb(192,193,199);
         border-radius: 125px 125px 0 0;
        }
        }
     
-  
+
+
+
+       @media only screen and (max-height:900px) {
+    
+        #contactme{
+        position: absolute;
+        height: 160px;
+        width: 250px;
+        left: 35%;
+        top:90%;
+        background: rgb(159,193,199);
+        border-radius: 125px 125px 0 0;
+        transition: 2s;
+        }
+          
+          #contactme:hover {
+          position: absolute;
+          transition: 2s;
+          height: 160px;
+          width: 250px;
+          left: 35%;
+          top:87%;
+          background: rgb(192,193,199);
+          border-radius: 125px 125px 0 0;
+         }
+         }
+      
+         @media only screen and (max-height:768px) {
+    
+          #contactme{
+          position: absolute;
+          height: 160px;
+          width: 250px;
+          left: 34%;
+          top:90%;
+          background: rgb(159,193,199);
+          border-radius: 125px 125px 0 0;
+          transition: 2s;
+          }
+            
+            #contactme:hover {
+            position: absolute;
+            transition: 2s;
+            height: 160px;
+            width: 250px;
+            left: 34%;
+            top:86%;
+            background: rgb(192,193,199);
+            border-radius: 125px 125px 0 0;
+           }
+           }
+
+
+           @media only screen and (max-height:670px) {
+    
+            #contactme{
+            position: absolute;
+            height: 160px;
+            width: 250px;
+            left: 32%;
+            top:88%;
+            background: rgb(159,193,199);
+            border-radius: 125px 125px 0 0;
+            transition: 2s;
+            }
+              
+              #contactme:hover {
+              position: absolute;
+              transition: 2s;
+              height: 160px;
+              width: 250px;
+              left: 32%;
+              top:84%;
+              background: rgb(192,193,199);
+              border-radius: 125px 125px 0 0;
+             }
+             }
+
+
+             @media only screen and (max-height:570px) {
+    
+              #contactme{
+              position: absolute;
+              height: 160px;
+              width: 250px;
+              left: 29%;
+              top:86%;
+              background: rgb(159,193,199);
+              border-radius: 125px 125px 0 0;
+              transition: 2s;
+              }
+                
+                #contactme:hover {
+                position: absolute;
+                transition: 2s;
+                height: 160px;
+                width: 250px;
+                left: 29%;
+                top:82%;
+                background: rgb(192,193,199);
+                border-radius: 125px 125px 0 0;
+               }
+               }
+
+/* ///////////////// */
+
+p {
+display: inline-block;
+max-width: 80%;
+
+}
 
 .carousel-inner
 {
   height: 60vh;
+  width: 10vh;
   justify-content: center !important;  
   text-align: center !important;
-/*   padding-right:1vh;
-  padding-left:1vh;  */
-   /* position: relative;  */
+  border-radius: 4vh;
+  /* margin: auto;
+  padding: auto; */
+
+
 }
-
-
 
  .carousel-indicators {
    top: 110% !important;
    justify-content: center !important;  
 }
 
-
 .col intro-col3{
    justify-content: center !important;
     text-align: center !important; 
    resize: both;
 }
- 
 
  #body	{
   animation: all 1s ease !important;
@@ -194,11 +269,10 @@ p {
   display: flex;  
 } 
 
-
 .page-section {
   position: fixed;
   display: flex;
-  width: 100vw; 
+  width: 100vh; 
   height: 100vh;
   animation: all 1s ease;
   flex-direction: column-reverse;
@@ -212,14 +286,13 @@ p {
    font-size: calc(0.7em + 0.6vw) !important; 
   }
 
-  .col a {
-    color:inherit;
+  /* .col a {
     text-decoration: none;
   }
   
   .col a:hover {
-    text-decoration: underline;
-  } 
+    text-decoration:wavy;
+  }  */
 
   
 
@@ -232,7 +305,7 @@ p {
 }
 
 .shown {
- 	/*display: initial;*/ 
+ 	/* display: initial;  */
 	-webkit-animation: fadeIn 1s /* Safari 4+ */;
   -moz-animation:    fadeIn 1s /* Fx 5+ */;
   -o-animation:      fadeIn 1s /* Opera 12+ */;
@@ -266,7 +339,6 @@ p {
   display: inline-block;
   width: 30vh;
   height: 30vh;  
-  /* margin-left: 8vw; */
   filter: grayscale(100%);
   transition:all 2s ease;
   margin-bottom: 5vh;
@@ -286,7 +358,6 @@ p {
   display: inline-block;
   width: 30vh;
   height: 30vh;  
-  /* margin-left: 35vh; */
   filter: grayscale(100%);
   transition:all 2s ease;
   margin-bottom: 5vh;
@@ -307,7 +378,6 @@ p {
   display: inline-block;
   width: 30vh;
   height: 30vh;  
-  /* margin-left: 2vh; */
   filter: grayscale(100%);
   transition:all 2s ease;
   margin-bottom: 5vh;
@@ -345,10 +415,10 @@ p {
   background: url(../img/europa.png);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 30vw;
+  display: inline-block;
+  width: 30vh;
   height: 30vh;  
-  margin-left: 35vh;
-  filter: grayscale(80%);
+  filter: grayscale(100%);
   transition: 2s ease-out;
   margin-bottom: 5vh;
 }
@@ -357,6 +427,29 @@ p {
   filter: grayscale(0%);
 
 }
+
+
+
+
+.wwt{
+  background: url(../img/wwt.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 30vh;
+  height: 30vh;  
+  filter: grayscale(80%);
+  transition: 2s ease-out;
+  margin-bottom: 5vh;
+}
+
+.wwt:hover{
+  filter: grayscale(0%);
+
+}
+
+
+
 
 
 
@@ -373,8 +466,6 @@ p {
   justify-content: center; 
   display: flex;  
   margin-left: 25vh;
-/*   position: absolute;
- */
 
 }; 
 
@@ -546,17 +637,17 @@ margin-top: 2vh;
 
   #textover{
   position: relative;
-  left: 32%;
-  font-size:15px;
-  top:5%;
+  left: 31%;
+  font-size:1em;
+  top:6%;
  }
 
 
  #contactmail{
   position: relative;
-  left: 13%;
-  font-size:15px;
-  top:9%;
+  left: 14%;
+  font-size:0.9em;
+  top:10%;
  }
  
 
