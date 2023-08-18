@@ -429,6 +429,24 @@ max-width: 80%;
 }
 
 
+.ux{
+  background: url(../img/europa.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 30vh;
+  height: 30vh;  
+  filter: grayscale(100%);
+  transition: 2s ease-out;
+  margin-bottom: 5vh;
+}
+
+.ux:hover{
+  filter: grayscale(0%);
+
+}
+
+
 
 
 .wwt{
